@@ -1,0 +1,81 @@
+/* Base Navbar Styles */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 2rem;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  /* margin: 0px 0px 8px 0px; */
+  border-radius: 10px;
+}
+
+/* Brand Section */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 35px;
+  object-fit: contain;
+  margin-right: 5px;
+}
+
+.brand-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--gold);
+  letter-spacing: 2px;
+}
+
+/* Navigation Links */
+.navbar-links {
+  display: flex;
+  list-style: none; /* Removes bullet points */
+  margin: 0;
+  padding: 0;
+  gap: 2rem; /* Spacing between links */
+}
+
+/* Styling for the new <span> elements */
+.navbar-links li span {
+  color: var(--primary-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+  cursor: pointer; /* Add a pointer cursor to indicate clickability */
+}
+
+.navbar-links li span:hover {
+  color: var(--gold);
+}
+
+/* Auth Button */
+.login-btn {
+  background-color: transparent;
+  color: var(--gold);
+  border: 2px solid var(--gold);
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.login-btn:hover {
+  background-color: var(--gold);
+  color: var(--primary-bg);
+}
+
+/* Mobile-Specific Styles */
+.mobile-menu-toggle {
+  display: none; /* Hidden by default on desktop */
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: var(--gold);
+  cursor: pointer;
+}
+

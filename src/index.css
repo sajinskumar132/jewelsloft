@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-weight: 400;
+  background-color: #ffffff;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+/* Color Palette */
+  --primary-bg: #FFFFFF; /* Changed from black to white */
+  --primary-text: #333333; /* Darker text for contrast on white */
+  --gold: #B8860B; /* A slightly deeper gold to stand out on white, or #FFD700 still works */
+  --emerald: #046A38;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  /* font-family: "Inter", sans-serif; */
+}

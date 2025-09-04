@@ -1,0 +1,39 @@
+.services_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 60px 10%;
+  background: #fffaf0; /* soft ivory for luxury feel */
+  text-align: center;
+}
+
+.service_card {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: #4a3c0a;
+}
+
+.service_card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+}
+
+.service_card .icon {
+  color: #c89b3c; /* gold tone */
+  margin-bottom: 15px;
+}
+
+.service_card h3 {
+  font-size: 1.4rem;
+  color: #8b7500;
+  margin-bottom: 10px;
+}
+
+.service_card p {
+  font-size: 0.95rem;
+  color: #4a3c0a;
+  line-height: 1.5;
+}
