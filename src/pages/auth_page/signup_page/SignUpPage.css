@@ -1,0 +1,219 @@
+/* Main Background */
+.SignUpPage_main_container {
+  height: 100vh;
+  background: linear-gradient(135deg, #c89b3c, #f1d488);
+}
+
+.SignUpPage_container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+/* Overlay Decorative Texts */
+.SignUpPage_bg_overlay_texts {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.1);
+  font-weight: 800;
+  z-index: 0;
+}
+.SignUpPage_ol_mainsection {
+  top: 2%;
+}
+.SignUpPage_ol_section1 {
+  top: 10%;
+  left: 5%;
+}
+.SignUpPage_ol_section2 {
+  right: 5%;
+  bottom: 10%;
+}
+.SignUpPage_bg_overlay_texts h1 {
+  font-size: 100px;
+}
+.SignUpPage_bg_overlay_texts h2 {
+  font-size: 80px;
+}
+.SignUpPage_bg_overlay_texts h3 {
+  font-size: 60px;
+}
+
+/* Decorative Icons */
+.SignUpPage_bg_icon {
+  position: absolute;
+  opacity: 0.08;
+  width: 200px;
+  height: 200px;
+  z-index: 0;
+}
+.SignUpPage_bg_icon1 {
+  bottom: 10%;
+  left: 10%;
+}
+.SignUpPage_bg_icon2 {
+  top: 20%;
+  right: 15%;
+}
+
+/* Brand */
+.SignUpPage_brand_wrapper {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.SignUpPage_brand_icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: contain;
+  background: #fff;
+  padding: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+.SignUpPage_brand_name {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #c89b3c;
+  text-transform: uppercase;
+}
+
+/* Card */
+.SignUpPage_card {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.SignUpPage_title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #07385f;
+}
+.SignUpPage_subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.SignUpPage_form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.SignUpPage_input_group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fafafa;
+  transition: all 0.3s ease;
+}
+.SignUpPage_input_group:focus-within {
+  border-color: #c89b3c;
+  box-shadow: 0 0 6px rgba(200, 155, 60, 0.4);
+}
+.SignUpPage_input_group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  background: transparent;
+}
+
+/* Buttons */
+.SignUpPage_btn {
+  background: linear-gradient(135deg, #c89b3c, #f1d488);
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  color: #07385f;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.SignUpPage_btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(200, 155, 60, 0.4);
+}
+
+/* Divider */
+.SignUpPage_divider {
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+}
+.SignUpPage_divider span {
+  background: #fff;
+  padding: 0 12px;
+  color: #888;
+  font-size: 14px;
+}
+.SignUpPage_divider:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  z-index: -1;
+}
+
+/* Google Button */
+.SignUpPage_google_btn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.SignUpPage_google_btn img {
+  width: 20px;
+  height: 20px;
+}
+.SignUpPage_google_btn:hover {
+  background: #f9f9f9;
+}
+
+/* Footer */
+.SignUpPage_footer_text {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #555;
+}
+.SignUpPage_footer_text a {
+  color: #c89b3c;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 5px;
+  transition: 0.3s ease;
+}
+.SignUpPage_footer_text a:hover {
+  color: #b8860b;
+  text-decoration: underline;
+}

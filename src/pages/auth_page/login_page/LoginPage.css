@@ -1,0 +1,258 @@
+/* Background */
+/* Background */
+.main_login_container {
+  height: 100vh;
+  background: linear-gradient(135deg, #c89b3c, #f1d488);
+}
+.login_container {
+  height: 100%;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* position: relative;
+  overflow: hidden; */
+}
+
+/* Overlay Decorative Texts */
+.bg_overlay_texts {
+  position: absolute;
+  color: rgba(255, 255, 255, 0.1);
+  font-weight: 800;
+  z-index: 0;
+}
+.ol_mainsection{
+    top: 2%;
+}
+.ol_section1 {
+  top: 10%;
+  left: 5%;
+}
+.ol_section2 {
+  right: 5%;
+  bottom: 10%;
+}
+.bg_overlay_texts h1 {
+  font-size: 100px;
+}
+.bg_overlay_texts h2 {
+  font-size: 80px;
+}
+.bg_overlay_texts h3 {
+  font-size: 60px;
+}
+
+/* Decorative Transparent Icons */
+.bg_icon {
+  position: absolute;
+  opacity: 0.08;
+  width: 200px;
+  height: 200px;
+  z-index: 0;
+}
+.bg_icon1 {
+  bottom: 10%;
+  left: 10%;
+}
+.bg_icon2 {
+  top: 20%;
+  right: 15%;
+}
+.loginpage_brand_wrapper {
+  text-align: center;
+  margin-bottom: 8px;
+}
+/* Logo Icon */
+.loginpage_brand_icon {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  object-fit: contain;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  background: white;
+  padding: 6px;
+  transition: transform 0.3s ease;
+}
+
+.loginpage_brand_icon:hover {
+  transform: scale(1.08);
+}
+
+/* Brand Name */
+.loginpage_brand_name {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #c89b3c; /* Dark Blue */
+  text-transform: uppercase;
+}
+
+/* Card */
+.login_card {
+  background: #fff;
+  padding: 30px 25px;
+  border-radius: 16px;
+  max-width: 380px;
+  width: 100%;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  text-align: center;
+  position: relative;
+  z-index: 2;
+}
+
+.logo_circle {
+  width: 70px;
+  height: 70px;
+  background: linear-gradient(135deg, #c89b3c, #f1d488);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #07385f;
+  margin: 0 auto 10px;
+  box-shadow: 0 6px 15px rgba(200, 155, 60, 0.4);
+}
+
+.login_title {
+  font-size: 20px;
+  font-weight: 600;
+  color: #07385f;
+}
+.login_subtitle {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Form */
+.login_form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.input_group {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background: #fafafa;
+  transition: all 0.3s ease;
+}
+.input_group:focus-within {
+  border-color: #c89b3c;
+  box-shadow: 0 0 6px rgba(200, 155, 60, 0.4);
+}
+.input_group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 8px;
+  font-size: 14px;
+  background: transparent;
+}
+
+/* Buttons */
+.login_btn {
+  background: linear-gradient(135deg, #c89b3c, #f1d488);
+  border: none;
+  padding: 12px;
+  border-radius: 10px;
+  color: #07385f;
+  font-weight: 600;
+  font-size: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.login_btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(200, 155, 60, 0.4);
+}
+
+/* Divider */
+.divider {
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+}
+.divider span {
+  background: #fff;
+  padding: 0 12px;
+  color: #888;
+  font-size: 14px;
+}
+.divider:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  height: 1px;
+  background: #ddd;
+  z-index: -1;
+}
+
+/* Google Button */
+.google_btn {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  background: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.google_btn img {
+  width: 20px;
+  height: 20px;
+}
+.google_btn:hover {
+  background: #f9f9f9;
+}
+
+/* Forgot Password */
+.forgot_password {
+  text-align: right;
+  margin: 5px 0 15px;
+}
+.forgot_password a {
+  font-size: 13px;
+  color: #c89b3c;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+.forgot_password a:hover {
+  color: #b8860b;
+  text-decoration: underline;
+}
+
+/* Signup Link */
+.signup_text {
+  margin-top: 18px;
+  font-size: 14px;
+  color: #555;
+}
+.signup_text a {
+  color: #c89b3c;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 5px;
+  transition: 0.3s ease;
+}
+.signup_text a:hover {
+  color: #b8860b;
+  text-decoration: underline;
+}

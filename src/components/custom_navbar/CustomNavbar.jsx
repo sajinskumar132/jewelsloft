@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import jewels_lofi_logo from "../../assets/jewels_lofi_logo.png";
 import "./CustomNavbar.css";
+import { useNavigate } from "react-router-dom";
 
 function CustomNavbar() {
+  const navigation = useNavigate();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const toggleMobileMenu = () => {
@@ -64,7 +66,14 @@ function CustomNavbar() {
 
         {/* Login/Signup Button */}
         <div className="navbar-auth">
-          <button className="login-btn">Login / Sign Up</button>
+          <button
+            className="login-btn"
+            onClick={() => {
+              navigation("/login");
+            }}
+          >
+            Login / Sign Up
+          </button>
         </div>
       </div>
     </div>

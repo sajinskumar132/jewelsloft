@@ -7,7 +7,7 @@ function CustomerPageLayout() {
   return (
     <div>
       <CustomNavbar />
-      <div style={{minHeight:'80vh',backgroundColor:"#fffaf5"}}>
+      <div style={{minHeight:'80vh',backgroundColor:"#fffaf5",marginTop:"80px"}}>
         <Outlet />
       </div>
       <Footer />
