@@ -1,0 +1,248 @@
+.product_details_container {
+  display: flex;
+  gap: 60px;
+  padding: 60px 8%;
+  background: #fffaf5;
+  flex-wrap: wrap;
+}
+
+/* ---- Gallery ---- */
+.product_gallery {
+  flex: 1;
+}
+.main_img {
+  width: 100%;
+  max-width: 480px;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+.thumbnail_row {
+  display: flex;
+  gap: 14px;
+  margin-top: 20px;
+}
+.thumb_img {
+  width: 70px;
+  height: 70px;
+  border-radius: 12px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s ease, border 0.3s ease;
+}
+.thumb_img:hover {
+  transform: scale(1.05);
+}
+.active_thumb {
+  border: 3px solid #c89b3c;
+}
+
+/* ---- Info ---- */
+.product_info {
+  flex: 1.2;
+}
+.info_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.product_title {
+  font-size: 2.2rem;
+  color: #4a3c0a;
+  margin-bottom: 10px;
+}
+.product_desc {
+  font-size: 1rem;
+  color: #5c4b12;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Price */
+.price_box {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 15px;
+}
+.discount_price {
+  font-size: 1.9rem;
+  color: #c89b3c;
+  font-weight: bold;
+}
+.original_price {
+  font-size: 1.1rem;
+  text-decoration: line-through;
+  color: #777;
+}
+.offer_tag {
+  background: #c89b3c;
+  color: white;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: bold;
+}
+
+/* Highlights */
+.product_highlights {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+  color: #4a3c0a;
+  font-size: 0.95rem;
+}
+.product_highlights li {
+  margin-bottom: 8px;
+}
+
+/* Quantity */
+.quantity_box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+}
+.quantity_box button {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: none;
+  background: #c89b3c;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.quantity_box button:hover {
+  background: #b8860b;
+}
+
+/* Buttons */
+.action_btns {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.add_cart_btn,
+.pdp_buy_btn {
+  flex: 1;
+  padding: 14px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+.add_cart_btn {
+  background: #c89b3c;
+  color: white;
+}
+.add_cart_btn:hover {
+  background: #b8860b;
+}
+.pdp_buy_btn {
+  border: 2px solid #c89b3c;
+  text-align: center;
+  color: #c89b3c;
+  background: white;
+}
+.pdp_buy_btn:hover {
+  background: #f5de9f;
+}
+
+
+/* Delivery */
+.delivery_box {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #fff3d9;
+  padding: 15px 20px;
+  border-radius: 14px;
+  margin-bottom: 20px;
+}
+.change_address_btn {
+  margin-top: 5px;
+  background: none;
+  border: none;
+  color: #c89b3c;
+  font-weight: bold;
+  cursor: pointer;
+}
+.change_address_btn:hover {
+  text-decoration: underline;
+}
+
+/* Extra Info */
+.extra_info {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  font-size: 0.95rem;
+  color: #4a3c0a;
+}
+.extra_info div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+/* ---- Header Icons ---- */
+.header_icons {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  position: relative;
+}
+.share_wrapper {
+  position: relative;
+}
+.pdp_wishlist_btn,
+.share_btn {
+  width: 40px;
+  height: 40px;
+  background: transparent;
+  border: 2px solid #c89b3c;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.pdp_wishlist_btn:hover,
+.share_btn:hover {
+  background: #fff3d9;
+}
+
+/* ---- Share Menu ---- */
+.share_menu {
+  position: absolute;
+  top: 45px;
+  right: 0;
+  background: white;
+  border: 1px solid #ddd;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  min-width: 160px;
+  z-index: 20;
+}
+.share_menu button,
+.share_menu a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  color: #333;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+.share_menu button:hover,
+.share_menu a:hover {
+  background: #f9f9f9;
+}

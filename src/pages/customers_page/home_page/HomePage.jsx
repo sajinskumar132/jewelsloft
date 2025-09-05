@@ -17,7 +17,7 @@ function HomePage() {
   }
   return (
     <div>
-        <CustomNavbar/>
+        {/* <CustomNavbar/> */}
         <Hero/>
         <Services/>
         <Category/>
@@ -26,7 +26,7 @@ function HomePage() {
         <BestOffer/>
         <ProductShorts/>
         <LatestNewsAndContactUs/>
-        <Footer/>
+        {/* <Footer/> */}
         {/* <CustomSearchbar onChange={userSearch}/> */}
     </div>
   )

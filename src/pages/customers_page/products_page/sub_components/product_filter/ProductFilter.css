@@ -1,0 +1,90 @@
+.filter-container {
+  width: 250px;
+  padding: 24px;
+  background: #fffaf5; /* same background as bestseller */
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+  font-family: "Segoe UI", sans-serif;
+  position: sticky;
+  top: 100px; /* stays visible on scroll */
+  height: fit-content;
+}
+
+.filter-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #c89b3c; /* gold heading */
+  text-align: center;
+}
+
+.filter-section {
+  margin-bottom: 20px;
+}
+
+.filter-label {
+  font-weight: 600;
+  margin-bottom: 10px;
+  display: block;
+  color: #4a3c0a; /* deep brown */
+}
+
+.range-slider {
+  width: 100%;
+  cursor: pointer;
+  accent-color: #c89b3c; /* gold slider thumb */
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.checkbox-label {
+  font-size: 14px;
+  color: #4a3c0a;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.checkbox-label input {
+  accent-color: #c89b3c; /* gold checkboxes */
+}
+
+.sort-dropdown {
+  width: 100%;
+  padding: 10px;
+  border-radius: 12px;
+  border: 1px solid #c89b3c;
+  background: white;
+  color: #4a3c0a;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sort-dropdown:focus {
+  outline: none;
+  border-color: #b8860b;
+  box-shadow: 0 0 5px rgba(200, 155, 60, 0.4);
+}
+
+.clear-btn {
+  margin-top: 15px;
+  width: 100%;
+  padding: 12px;
+  background: #c89b3c; /* gold */
+  color: white;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.3s;
+}
+
+.clear-btn:hover {
+  background: #b8860b; /* darker gold */
+  transform: translateY(-2px);
+}

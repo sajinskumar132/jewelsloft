@@ -1,4 +1,10 @@
 /* Base Navbar Styles */
+.main_navbar_container{
+  width: 100%;
+  position: fixed;
+  top: 0px;
+  z-index: 100;
+}
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -9,6 +15,7 @@
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   /* margin: 0px 0px 8px 0px; */
   border-radius: 10px;
+
 }
 
 /* Brand Section */

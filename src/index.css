@@ -18,6 +18,11 @@ body {
   margin: 0;
   padding: 0;
 }
+html{
+  padding-top: 80px;
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
+}
 h1,
 h2,
 h3,

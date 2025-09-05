@@ -4,8 +4,10 @@ import hero_image_1 from "../../../../../assets/hero_img_1.jpg";
 import hero_image_2 from "../../../../../assets/hero_img_2.jpg";
 import hero_image_3 from "../../../../../assets/hero_img_3.jpg";
 import hero_image_4 from "../../../../../assets/hero_img_4.jpg";
+import { useNavigate } from "react-router-dom";
 
 function Hero() {
+  const navigate=useNavigate()
   return (
     <div className="hero_main_container">
       {/* Left Content */}
@@ -14,7 +16,9 @@ function Hero() {
           Discover Elegance with <span>JEWEL`S LOFT</span>
         </h1>
         <p className="hero_subtitle">Fresh Collections • Starting at just ₹9</p>
-        <button className="hero_btn">Shop More</button>
+        <button className="hero_btn" onClick={()=>{
+          navigate('/products')
+        }}>Shop More</button>
       </div>
 
       {/* Right Collage */}

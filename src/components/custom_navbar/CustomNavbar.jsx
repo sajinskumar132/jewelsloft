@@ -19,52 +19,53 @@ function CustomNavbar() {
   };
 
   return (
-    <div className="navbar">
-      {/* Navbar Brand and Logo */}
-      <div className="navbar-brand">
-        <img src={jewels_lofi_logo} alt="JewelsLoft Logo" className="logo" />
-        <h1 className="brand-name">JEWEL'S LOFT</h1>
-      </div>
+    <div className="main_navbar_container">
+      <div className="navbar">
+        {/* Navbar Brand and Logo */}
+        <div className="navbar-brand">
+          <img src={jewels_lofi_logo} alt="JewelsLoft Logo" className="logo" />
+          <h1 className="brand-name">JEWEL'S LOFT</h1>
+        </div>
 
-      {/* Mobile menu toggle button */}
-      <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
-        {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
-      </button>
+        {/* Mobile menu toggle button */}
+        <button className="mobile-menu-toggle" onClick={toggleMobileMenu}>
+          {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
+        </button>
 
-      {/* Navigation Links */}
-      <ul className={`navbar-links ${isMobileMenuOpen ? "open" : ""}`}>
-        <li>
-          <span onClick={() => handleNavigation("home")}>Home</span>
-        </li>
-        <li>
-          <span onClick={() => handleNavigation("new-arrivals")}>New Arrivals</span>
-        </li>
-        <li>
-          <span onClick={() => handleNavigation("earrings")}>Earrings</span>
-        </li>
-        <li>
-          <span onClick={() => handleNavigation("minimal-wear")}>Minimal Wear</span>
-        </li>
-        <li>
-          <span onClick={() => handleNavigation("office-wear")}>Office Wear</span>
-        </li>
-        <li>
-          <span onClick={() => handleNavigation("temple-jewellery")}>Temple Jewellery</span>
-        </li>
-        <li>
-          <span onClick={() => handleNavigation("choker-collections")}>Choker Collections</span>
-        </li>
-        <li>
-          <span onClick={() => handleNavigation("pendant-collection")}>Pendant Collection</span>
-        </li>
-        <li>
-          <span onClick={() => handleNavigation("invisible-necklace")}>Invisible Necklace</span>
-        </li>
-      </ul>
+        {/* Navigation Links */}
+        <ul className={`navbar-links ${isMobileMenuOpen ? "open" : ""}`}>
+          <li>
+            <span onClick={() => handleNavigation("home")}>Home</span>
+          </li>
+          <li>
+            <span onClick={() => handleNavigation("new-arrivals")}>
+              New Arrivals
+            </span>
+          </li>
+          <li>
+            <span onClick={() => handleNavigation("minimal-wear")}>
+              Best sellers
+            </span>
+          </li>
+          <li>
+            <span onClick={() => handleNavigation("office-wear")}>Offers</span>
+          </li>
+          <li>
+            <span onClick={() => handleNavigation("temple-jewellery")}>
+              Product Shorts
+            </span>
+          </li>
+          <li>
+            <span onClick={() => handleNavigation("choker-collections")}>
+              Contact US
+            </span>
+          </li>
+        </ul>
 
-      {/* Login/Signup Button */}
-      <div className="navbar-auth">
-        <button className="login-btn">Login / Sign Up</button>
+        {/* Login/Signup Button */}
+        <div className="navbar-auth">
+          <button className="login-btn">Login / Sign Up</button>
+        </div>
       </div>
     </div>
   );
